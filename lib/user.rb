@@ -27,4 +27,9 @@ class User
 
     end
 
+    def self.count
+        self.all.count
+
+    end
+
 end

@@ -33,10 +33,8 @@ class Book
     end
 
     def self.count
-        count = 0
-        self.all.each{|books| count +=1}
-        count
-        
+        self.all.count
+
     end
 
     def self.all
