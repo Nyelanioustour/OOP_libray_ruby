@@ -31,10 +31,9 @@ class Book
         #accepts a string, returns all books of a genre
         self.all.select{|books| books.genre == genre}
     end
+
     def self.all
         @@all
     end
-
-
 
 end
