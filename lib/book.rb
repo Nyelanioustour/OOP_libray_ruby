@@ -22,6 +22,15 @@ class Book
         self.user_checkouts.map{|checkouts| checkouts.user}
     end
 
+    def self.author(author)
+        #accepts a string, returns all books by an author
+        self.all.select{|books| books.author == author}
+    end
+    
+    def self.genre(genre)
+        #accepts a string, returns all books of a genre
+        self.all.select{|books| books.genre == genre}
+    end
     def self.all
         @@all
     end
