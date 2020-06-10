@@ -32,6 +32,13 @@ class Book
         self.all.select{|books| books.genre == genre}
     end
 
+    def self.count
+        count = 0
+        self.all.each{|books| count +=1}
+        count
+        
+    end
+
     def self.all
         @@all
     end
